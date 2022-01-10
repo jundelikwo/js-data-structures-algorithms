@@ -14,10 +14,7 @@ function formatString(str) {
 }
 
 function anagrams(stringA, stringB) {
-    const formattedStringA = formatString(stringA);
-    const formattedStringB = formatString(stringB);
-
-    return formattedStringA === formattedStringB;
+    return formatString(stringA) === formatString(stringB);
 }
 
 // function anagrams(stringA, stringB) {
