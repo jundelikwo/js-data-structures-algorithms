@@ -16,7 +16,9 @@
 //     [10,  9,  8, 7]]
 
 function matrix(n) {
+    // Initialize nxn matrix with 0
     const results = Array(n).fill(0).map(() => Array(n).fill(0));
+
     let counter = 1;
     let startRow = 0;
     let endRow = n - 1;
