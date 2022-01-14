@@ -17,13 +17,24 @@
 //       '### '
 //       '####'
 
-function steps(n) {
-    for (let row = 1; row <= n; row++) {
-        let res = '#'.repeat(row) + ' '.repeat(n - row);
-
-        console.log(res);
+function steps(n, row = 1) {
+    if (row > n) {
+        return;
     }
+
+    let res = '#'.repeat(row) + ' '.repeat(n - row);
+    console.log(res);
+
+    return steps(n, row + 1);
 }
+
+// function steps(n) {
+//     for (let row = 1; row <= n; row++) {
+//         let res = '#'.repeat(row) + ' '.repeat(n - row);
+
+//         console.log(res);
+//     }
+// }
 
 // function steps(n, row = 0, stair = '') {
 //     if (n === row) {
